@@ -1,0 +1,137 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f8f9fa;
+  
+  }
+  
+  .game-container {
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .player-setup input {
+    margin: 5px;
+    padding: 8px;
+    font-size: 16px;
+  }
+  
+  .player-setup button {
+    padding: 8px 15px;
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  
+  .status-panel {
+    margin-top: 15px;
+    font-size: 18px;
+  }
+  
+  .board {
+    display: flex;
+    flex-direction: column;
+    background-color: #0077b6;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  .highlight-row {
+    display: flex;
+    margin-bottom: 5px;
+    
+  }
+  
+  .highlight-cell {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    margin: 0 5px;
+  }
+  
+  .row {
+    display: flex;
+  }
+  
+  .cell {
+    width: 60px;
+    height: 60px;
+    background-color: #caf0f8;
+    margin: 5px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+  }
+  
+  .cell.hovered {
+    outline: 2px solid #90e0ef;
+  }
+  
+  .winner-message {
+    font-size: 22px;
+    font-weight: bold;
+    color: green;
+    margin: 10px 0;
+  }
+  .piece {
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+    transform: scale(1);
+  }
+  
+  .red {
+    background-color: red;
+  }
+  
+  .yellow {
+    background-color: yellow;
+  }
+  
+  
+  @keyframes drop {
+    0% {
+      transform: translateY(-300%);
+      opacity: 0;
+    }
+    60% {
+      transform: translateY(10%);
+      opacity: 1;
+    }
+    80% {
+      transform: translateY(-5%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .reset-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #0096c7;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .reset-btn:hover {
+    background-color: #0077b6;
+  }
+  
+  
+
+ 
